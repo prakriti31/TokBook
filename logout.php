@@ -1,0 +1,10 @@
+<?php
+unset($_SESSION["login_customer"]);
+unset($_SESSION["login_user"]);
+unset($_SESSION["shop_id"]);
+unset($_SESSION["login-session"]);
+unset($_SESSION["book_id"]);
+unset($_SESSION["upshop"]);
+session_destroy();
+header("Location:index.php");
+?>
